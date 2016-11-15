@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<Settings>
+    <DbPath>eBook</DbPath>
+    <DbVersion>1</DbVersion>
+    <XmlPath>Documents~eBook.xml</XmlPath>
+    <UserLogin>Dimid</UserLogin>
+    <UserPassword>̊˧טǉŭ</UserPassword>
+    <CryptKey>53~169~59</CryptKey>
+    <FillPassword>True</FillPassword>
+</Settings>

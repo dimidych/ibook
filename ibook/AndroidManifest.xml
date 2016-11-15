@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-feature android:name="android.hardware.telephony" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ibook.MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name="com.ibook.BrowseActivity"
+            android:label="@string/title_activity_browse" >
+        </activity>
+        <activity
+            android:name="com.ibook.AutorizationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibook.AddNewContactActivity"
+            android:label="@string/title_activity_add_new_contact" >
+        </activity>
+        <activity
+            android:name="com.ibook.AddNewContactRecordActivity"
+            android:label="@string/title_activity_add_new_contact_record" >
+        </activity>
+        <activity
+            android:name="com.ibook.AddNewGroupActivity"
+            android:label="@string/title_activity_add_new_group" >
+        </activity>
+        <activity
+            android:name="com.ibook.BrowseContactActivity"
+            android:label="@string/title_activity_browse_contact" >
+        </activity>
+        <activity
+            android:name="com.ibook.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.ibook.SendSmsActivity"
+            android:label="@string/title_activity_send_sms" >
+        </activity>
+        <activity
+            android:name="com.ibook.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="android.support.v4.app.FragmentActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.FragmentActivity" />
+        </activity>
+        <activity
+            android:name="com.ibook.ExtraSettingsTab"
+            android:label="@string/title_tab_settings_extra" >
+        </activity>
+        <activity
+            android:name="com.ibook.UserGroupSettingsTab"
+            android:label="@string/title_tab_settings_user_group" >
+        </activity>
+        <activity
+            android:name="com.ibook.FieldSettingsTab"
+            android:label="@string/title_tab_settings_field" >
+        </activity>
+    </application>
+
+</manifest>

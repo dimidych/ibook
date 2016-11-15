@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FieldSettingsTab" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/notepad_paper_odd"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/pilcrow"
+            android:text="@string/lblFieldName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtField"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblFieldType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/lblFieldType"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spnrFieldType"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3.78" />
+
+        <TextView
+            android:id="@+id/lblFieldIntent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/lblFieldIntent"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/lstIntents"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_margin="3dp"
+            android:choiceMode="multipleChoice"
+            android:descendantFocusability="beforeDescendants"
+            android:overScrollMode="ifContentScrolls" >
+        </ListView>
+    </LinearLayout>
+
+<Button
+        android:id="@+id/btnDelimeter2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/grp2" />
+    <ListView
+        android:id="@+id/lstAllFields"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_margin="3dp"
+        android:layout_weight="0.65"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="beforeDescendants"
+        android:overScrollMode="ifContentScrolls" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAddField"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:drawableLeft="@drawable/add_16x16"
+            android:onClick="btnAddField_Click"
+            android:text="@string/btnAddContact" />
+
+        <Button
+            android:id="@+id/btnUpdateField"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/pencil"
+            android:onClick="btnUpdateField_Click"
+            android:text="@string/btnUpd" />
+
+        <Button
+            android:id="@+id/btnDeleteField"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:drawableLeft="@drawable/del_16x16"
+            android:onClick="btnDeleteField_Click"
+            android:text="@string/btnDel" />
+    </LinearLayout>
+
+</LinearLayout>

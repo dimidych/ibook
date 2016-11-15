@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/mnuCtxBrowsePerson"
+        android:title="@string/SHOW"
+        android:icon="@drawable/user_red"
+        android:orderInCategory="0"
+    />
+    
+    <item
+        android:id="@+id/mnuCtxInsertPerson"
+        android:title="@string/btnAdd"
+        android:icon="@drawable/add_16x16"
+        android:orderInCategory="1"
+    />
+    
+    <item
+        android:id="@+id/mnuCtxUpdatePerson"
+        android:title="@string/UPD"
+        android:icon="@drawable/pencil"
+        android:orderInCategory="2"
+    />
+    
+    <item
+        android:id="@+id/mnuCtxDeletePerson"
+        android:title="@string/DEL"
+        android:icon="@drawable/del_16x16"
+        android:orderInCategory="3"
+    />
+
+</menu>

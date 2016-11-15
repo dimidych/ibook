@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewGroupActivity" 
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNewGroup"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/group"
+            android:text="@string/lblNewGroup"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtNewGroup"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="350dp" 
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+            
+        <Button
+            android:id="@+id/btnAddGroup"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnAddGroup_Click"
+            android:text="@string/btnAddContact" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnCancel_Click"
+            android:text="@string/btnSovsemCancel" />
+
+		</LinearLayout>
+
+</LinearLayout>

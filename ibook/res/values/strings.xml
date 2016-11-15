@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="DEL">Удалить</string>
+    <string name="UPD">Изменить</string>
+    <string name="ADD">Добавить</string>
+    <string name="SHOW">Просмотреть</string>
+
+    <!-- authorization activity -->
+    <string name="title_activity_autorization">iBook - Авторизация</string>
+    <string name="chkFillPwd">Запомнить пароль</string>
+    <string name="lblLogin">Логин : </string>
+    <string name="lblPwd">Пароль : </string>
+    <string name="btnText">Выполнить вход</string>
+    <string name="btnCancel">Я не в курсе насчет пароля</string>
+
+    <!-- main activity -->
+    <string name="btnSearch">Поиск</string>
+    <string name="mnuRefreshAll">Обновить</string>
+    <string name="btnAdd">Новый контакт</string>
+    <string name="btnExit">Выход</string>
+    <string name="mnuDwnldFromXml">Загрузить из XML</string>
+    <string name="mnuDwnldFromCryptXml">Загрузить из шифрованного XML</string>
+    <string name="mnuUpldToXml">Выгрузить в XML</string>
+    <string name="mnuUpldToCryptXml">Выгрузить в шифрованный XML</string>
+    <string name="mnuDwnldFromWmXml">Загрузить из WM XML</string>
+    <string name="mnuSettings">Настройки</string>
+    <string name="mnuAbout">О проге..</string>
+    <string name="app_name">iBook</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">iBook - Все контакты</string>
+
+    <!-- browse activity -->
+    <string name="title_activity_browse">iBook - Просмотр контакта</string>
+    <string name="btnDel">Удалить</string>
+    <string name="btnUpd">Изменить</string>
+
+    <!-- add new contact activity -->
+    <string name="title_activity_add_new_contact">iBook - Новый контакт</string>
+    <string name="title_activity_add_new_contact_upd">iBook - Изменить контакт</string>
+    <string name="title_activity_add_new_contact_del">iBook - Удалить контакт</string>
+    <string name="btnAddContact">Добавить</string>
+    <string name="btnSovsemCancel">Отмена</string>
+    <string name="lblName">ФИО</string>
+    <string name="lblGroup">Выберите группу</string>
+    <string name="btnAddGroup">Добавить группу</string>
+    <string name="lblContactSetAction">Контактные данные</string>
+    <string name="btnAddContactRecord">Добавить контактные данные</string>
+
+    <!-- add new group activity -->
+    <string name="title_activity_add_new_group">iBook - Новая группа</string>
+    <string name="title_activity_add_new_group_upd">iBook - Изменить группу</string>
+    <string name="title_activity_add_new_group_del">iBook - Удалить группу</string>
+    <string name="lblNewGroup">Наименование новой группы</string>
+
+    <!-- add new contact record activity -->
+    <string name="title_activity_add_new_contact_record">iBook - Новая запись</string>
+    <string name="title_activity_add_new_contact_record_upd">iBook - Изменить запись</string>
+    <string name="title_activity_add_new_contact_record_del">iBook - Удалить запись</string>
+    <string name="lblContactTypeLst">Тип записи</string>
+    <string name="lblContactValue">Контактные данные</string>
+    <string name="title_activity_browse_contact">BrowseContactActivity</string>
+    
+    <string name="title_activity_settings">iBook - Настройки</string>
+    <string name="title_activity_about">AboutActivity</string>
+    
+    <!-- about dialog fragment -->
+    <string name="titleAbout">iBook - Контакты</string>
+	<string name="btnOk">Закрыть</string>
+	<string name="lblAuthor">Автор : Кожомин Дмитрий</string>
+	<string name="lblEmail">dimidych@gmail.com</string>
+	<string name="lblEula">Все права защищены</string>
+	
+	<!-- sms dialog activity -->
+	<string name="title_activity_send_sms">SendSmsActivity</string>
+	<string name="titleSendSms">iBook - Отправка SMS</string>
+	<string name="btnSendSms">Отправить</string>
+	<string name="lblWhom">Кому : </string>
+	<string name="lblMessage">Сообщение : </string>
+	
+	<!-- progress dialog fragment -->
+    <string name="titleProgress">iBook - Контакты</string>
+    <string name="lblWait">Обождите минутку</string>
+    
+    <!-- extra settings tab -->
+    <string name="title_tab_settings_extra">iBook - Extras</string>
+    <string name="btnDeleteAll">Форсированное удаление</string>
+    <string name="btnUpldToCryptXml">Выгрузить в шифрованный XML</string>
+    <string name="btnUpldToXml">Выгрузить в XML</string>
+    <string name="btnDwnldFromWmXml">Загрузить из WM XML</string>
+    <string name="btnDwnldFromCryptXml">Загрузить из шифрованного XML</string>
+    <string name="btnDwnldFromXml">Загрузить из XML</string>
+    
+    <!-- user group settings tab -->
+    <string name="title_tab_settings_user_group">iBook - Изменить группу</string>
+    <string name="lblGroupName">Наименование группы</string>
+    
+    <!-- field settings tab -->
+    <string name="title_tab_settings_field">iBook - Изменить поля</string>
+    <string name="lblFieldName">Наименование поля</string>
+    <string name="lblFieldType">Тип поля</string>
+    <string name="lblFieldIntent">Список интентов</string>
+    
+    <!-- progress dialog fragment -->
+    <string name="titleAskFragment">iBook - Контакты</string>
+    <string name="btnYes">ОК</string>
+    
+</resources>

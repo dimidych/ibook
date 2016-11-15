@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mnuCtxInsertPerson"
+        android:title="@string/btnAdd"
+        android:icon="@drawable/add_16x16"
+        android:showAsAction="never"
+        android:orderInCategory="2"
+    />
+    
+    <item
+        android:id="@+id/mnuCtxUpdatePerson"
+        android:title="@string/UPD"
+        android:icon="@drawable/pencil"
+        android:showAsAction="ifRoom"
+        android:orderInCategory="1"
+    />
+    
+    <item
+        android:id="@+id/mnuCtxDeletePerson"
+        android:title="@string/DEL"
+        android:icon="@drawable/del_16x16"
+        android:showAsAction="never"
+        android:orderInCategory="3"
+    />
+
+</menu>

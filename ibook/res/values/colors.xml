@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="notepad_paper_even">#fbf9f9</color>
+<color name="notepad_paper_odd">#dbd8d8</color>
+<color name="notepad_lines">#FF0000FF</color>
+<color name="notepad_margin">#90FF0000</color>
+<color name="notepad_text">#090909</color>
+<color name="btn_ok_authorization">#7de04f</color>
+<color name="btn_cancel_authorization">#f5580c</color>
+<color name="grp1">#f8fc96</color>
+<color name="grp2">#b5b5b5</color>
+</resources>

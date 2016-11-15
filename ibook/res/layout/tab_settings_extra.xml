@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context=".ExtraSettingsTab">
+
+    <Button
+        android:id="@+id/btnDwnldFromXml"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:drawableLeft="@drawable/arrow2_down"
+        android:text="@string/btnDwnldFromXml" 
+        android:onClick="btnDwnldFromXml_Click"/>
+
+    <Button
+        android:id="@+id/btnDwnldFromCryptXml"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:drawableLeft="@drawable/download"
+        android:text="@string/btnDwnldFromCryptXml" 
+        android:onClick="btnDwnldFromCryptXml_Click"/>
+
+    <Button
+        android:id="@+id/btnDwnldFromWmXml"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:drawableLeft="@drawable/under_construction"
+        android:text="@string/btnDwnldFromWmXml"
+        android:onClick="btnDwnldFromWmXml_Click" />
+
+    <Button
+        android:id="@+id/btnUpldToXml"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:drawableLeft="@drawable/arrow2_up"
+        android:text="@string/btnUpldToXml"
+        android:onClick="btnUpldToXml_Click" />
+
+    <Button
+        android:id="@+id/btnUpldToCryptXml"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:drawableLeft="@drawable/back_top"
+        android:text="@string/btnUpldToCryptXml"
+        android:onClick="btnUpldToCryptXml_Click"  />
+
+    <Button
+        android:id="@+id/btnDeleteAll"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:drawableLeft="@drawable/cancel"
+        android:text="@string/btnDeleteAll"
+        android:onClick="btnDeleteAll_Click" />
+	
+</LinearLayout>

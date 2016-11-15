@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewContactActivity" 
+    android:orientation="vertical">
+
+    <!-- name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/user_suit"
+            android:text="@string/lblName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+        
+    </LinearLayout> 
+
+    <Button
+        android:id="@+id/btnDelimeter2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/grp2" />
+    
+    <!-- group -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        >
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginBottom="2dp"
+	        android:orientation="horizontal" >
+        
+            <TextView
+	            android:id="@+id/lblGroup"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/lblGroup"
+	            android:layout_marginLeft="10dp"
+        		android:layout_marginRight="2dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" 
+        	/>
+            
+            <Button
+                android:id="@+id/btnAddGroup"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:drawableLeft="@drawable/group"
+                android:layout_marginRight="10dp"
+                android:onClick="btnAddGroup_Click"
+                android:text="@string/btnAddGroup" />
+        
+        </LinearLayout>     
+
+        <Spinner
+                android:id="@+id/cmbAllGroups"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                 android:layout_marginBottom="2dp"
+                android:prompt="@string/lblGroup" />
+        
+    </LinearLayout>      
+
+    <Button
+        android:id="@+id/btnDelimeter1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/grp2" />
+    
+    <!-- contact set -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/lblContactSetAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/report_user"
+            android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:layout_marginTop="2dp"
+        	android:layout_marginBottom="2dp"
+            android:text="@string/lblContactSetAction"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <!-- contact ops btns -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp" >
+	        
+	        <Button
+	            android:id="@+id/btnAddContactRecord"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="105dp"
+	            android:layout_height="32dp"
+	            android:layout_marginLeft="2dp"
+	            android:drawableLeft="@drawable/add_16x16"
+	            android:onClick="btnAddContactRecord_Click"
+	            android:text="@string/ADD" 
+	        />
+
+	        <Button
+	            android:id="@+id/btnUpdateContactRecord"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="106dp"
+	            android:layout_height="32dp"
+	            android:drawableLeft="@drawable/pencil"
+	            android:onClick="btnUpdateContactRecord_Click"
+	            android:text="@string/UPD" />
+	        
+	        <Button
+	            android:id="@+id/btnDeleteContactRecord"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="100dp"
+	            android:layout_height="32dp"
+	            android:drawableLeft="@drawable/del_16x16"
+	            android:onClick="btnDeleteContactRecord_Click"
+	            android:text="@string/DEL" />
+	
+	    </LinearLayout> 
+    
+	    <ListView
+	        android:id="@+id/lstNewContacts"
+	        android:layout_width="match_parent"
+	        android:layout_height="230dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:choiceMode="singleChoice"
+	        android:descendantFocusability="beforeDescendants"
+	        android:minHeight="230dp" />
+    
+    </LinearLayout>
+    
+	<!-- confirmation btns -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp" 
+        android:layout_gravity="bottom">    
+
+        <Button
+            android:id="@+id/btnAddContact" 
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnAddContact_Click"
+            android:text="@string/btnAddContact" />
+
+        <Button
+            android:id="@+id/btnCancel" 
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnCancel_Click"
+            android:text="@string/btnSovsemCancel" />
+
+    </LinearLayout> 
+        
+</LinearLayout>
